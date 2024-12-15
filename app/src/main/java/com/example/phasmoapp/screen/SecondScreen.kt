@@ -70,6 +70,8 @@ fun LoginScreen(navController: NavController, appViewModel: AppViewModel) {
 
         Header()
 
+        Spacer(modifier = Modifier.padding(16.dp))
+
         PhasmoDivider()
 
         OutlinedTextField(
@@ -83,6 +85,7 @@ fun LoginScreen(navController: NavController, appViewModel: AppViewModel) {
                 focusedContainerColor = colorResource(R.color.white),
                 focusedLabelColor = Color.White,
                 focusedBorderColor = Color.Black,
+                focusedTextColor = Color.Black,
                 unfocusedContainerColor = colorResource(R.color.white)
             )
         )
@@ -102,6 +105,7 @@ fun LoginScreen(navController: NavController, appViewModel: AppViewModel) {
                 focusedContainerColor = colorResource(R.color.white),
                 focusedLabelColor = Color.White,
                 focusedBorderColor = Color.Black,
+                focusedTextColor = Color.Black,
                 unfocusedContainerColor = colorResource(R.color.white)
 
 
