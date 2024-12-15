@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -29,6 +30,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.phasmoapp.R
+import com.example.phasmoapp.components.Footer
 import com.example.phasmoapp.components.Header
 import com.example.phasmoapp.components.PhasmoDivider
 import com.example.phasmoapp.navigation.AppScreen
@@ -60,7 +62,7 @@ fun OptionsMenu(navController: NavController) {
 
         PhasmoDivider()
 
-        // User Options
+        // User Options - Esto llevaría a una pantalla con más opciones con los endpoints /update_user y /delete_user para Admins y aquellos autentificados (solo sobre su cuenta)
         Button(
             onClick = {  },
             modifier = Modifier
@@ -88,7 +90,7 @@ fun OptionsMenu(navController: NavController) {
 
         Spacer(modifier = Modifier.padding(16.dp))
 
-        // Ghost Info
+        // Ghost Info - Esto llevaría a una pantalla con más opciones con los endpoints /insert_ghost, /update_ghost y /delete_ghost para Admins y /ghosts para aquel usuario normal
         Button(
             onClick = { },
             modifier = Modifier
@@ -114,7 +116,7 @@ fun OptionsMenu(navController: NavController) {
 
         Spacer(modifier = Modifier.padding(16.dp))
 
-        // Evidence Info
+        // Evidence Info - Esto llevaría a una pantalla con más opciones con los endpoints /insert_evidence, /update_evidence y /delete_evidence para Admins y /evidences para aquel usuario normal
         Button(
             onClick = { },
             modifier = Modifier
@@ -140,7 +142,7 @@ fun OptionsMenu(navController: NavController) {
 
         Spacer(modifier = Modifier.padding(16.dp))
 
-        // Admin
+        // Admin - Esto llevaría a una pantalla con más opciones con los endpoints /update_user y /delete_user
         Button(
             onClick = { },
             modifier = Modifier
@@ -163,6 +165,10 @@ fun OptionsMenu(navController: NavController) {
                 Text("Admin", color = Color.White, fontWeight = FontWeight.Bold)
             }
         }
+
+        HorizontalDivider(Modifier.padding(16.dp))
+
+        Footer(navController)
     }
 
 }

@@ -17,7 +17,7 @@ fun PhasmoDivider(){
     Row(verticalAlignment = Alignment.CenterVertically) {
         HorizontalDivider(modifier = Modifier
             .weight(1f)
-            .padding(end = 8.dp))
+            .padding(start = 16.dp, end = 8.dp))
 
         Image(
             painter = painterResource(R.drawable.obake_hand),
@@ -28,6 +28,6 @@ fun PhasmoDivider(){
 
         HorizontalDivider(modifier = Modifier
             .weight(1f)
-            .padding(start = 8.dp))
+            .padding(start = 8.dp, end = 16.dp))
     }
 }

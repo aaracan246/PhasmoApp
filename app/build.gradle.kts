@@ -68,6 +68,9 @@ dependencies {
     // JSON serialization library, works with the Kotlin serialization plugin
     implementation(libs.kotlinx.serialization.json)
 
+    // Este me permite la barra de navegación
+    implementation (libs.androidx.material)
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
