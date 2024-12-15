@@ -64,7 +64,7 @@ fun OptionsMenu(navController: NavController) {
 
         // User Options - Esto llevaría a una pantalla con más opciones con los endpoints /update_user y /delete_user para Admins y aquellos autentificados (solo sobre su cuenta)
         Button(
-            onClick = {  },
+            onClick = { navController.navigate(route = AppScreen.FourthScreen.route) },
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(16.dp),
@@ -92,7 +92,7 @@ fun OptionsMenu(navController: NavController) {
 
         // Ghost Info - Esto llevaría a una pantalla con más opciones con los endpoints /insert_ghost, /update_ghost y /delete_ghost para Admins y /ghosts para aquel usuario normal
         Button(
-            onClick = { },
+            onClick = { navController.navigate(route = AppScreen.FourthScreen.route) },
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(16.dp),
@@ -118,7 +118,7 @@ fun OptionsMenu(navController: NavController) {
 
         // Evidence Info - Esto llevaría a una pantalla con más opciones con los endpoints /insert_evidence, /update_evidence y /delete_evidence para Admins y /evidences para aquel usuario normal
         Button(
-            onClick = { },
+            onClick = { navController.navigate(route = AppScreen.FourthScreen.route) },
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(16.dp),
@@ -144,7 +144,7 @@ fun OptionsMenu(navController: NavController) {
 
         // Admin - Esto llevaría a una pantalla con más opciones con los endpoints /update_user y /delete_user
         Button(
-            onClick = { },
+            onClick = { navController.navigate(route = AppScreen.FourthScreen.route) },
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(16.dp),

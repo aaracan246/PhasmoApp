@@ -39,7 +39,7 @@ fun NavigationBarFun(navController: NavController) {
                 navController.navigate(AppScreen.ThirdScreen.route)
             },
             icon = {
-                Image(painter = painterResource(R.drawable.optionsicon), "Options", Modifier.size(40.dp))
+                Image(painter = painterResource(R.drawable.trueusericon), "Options", Modifier.size(40.dp))
             },
             modifier = Modifier.background(color = colorResource(R.color.barraNav))
         )
@@ -49,7 +49,7 @@ fun NavigationBarFun(navController: NavController) {
         BottomNavigationItem(
             selected = false,
             onClick = {
-                navController.navigate(AppScreen.ThirdScreen.route)
+                navController.navigate(route = AppScreen.FourthScreen.route)
             },
             icon = {
                 Image(painter = painterResource(R.drawable.demonicon), "Ghosts", Modifier.size(40.dp))
@@ -62,7 +62,7 @@ fun NavigationBarFun(navController: NavController) {
         BottomNavigationItem(
             selected = false,
             onClick = {
-                navController.navigate(AppScreen.ThirdScreen.route)
+                navController.navigate(AppScreen.FourthScreen.route)
             },
             icon = {
                 Image(painter = painterResource(R.drawable.usericon), "Ghosts", Modifier.size(40.dp))
@@ -75,7 +75,7 @@ fun NavigationBarFun(navController: NavController) {
         BottomNavigationItem(
             selected = false,
             onClick = {
-                navController.navigate(AppScreen.ThirdScreen.route)
+                navController.navigate(route = AppScreen.FourthScreen.route)
             },
             icon = {
                 Image(painter = painterResource(R.drawable.adminicon), "Ghosts", Modifier.size(40.dp))
